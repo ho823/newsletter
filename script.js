@@ -1,4 +1,4 @@
- test = () => {
+btnState = () => {
   let emailInput = document.getElementById('email').value;
   let btn = document.getElementById('newsletter-btn');
     if (emailInput === '') {
@@ -8,8 +8,12 @@
     }
  } 
 
-
-
 receiveNewsletter = () => {
-  console.log('email ok');
+  let emailInputValue = document.getElementById('email').value;
+  let modal = document.getElementById('modal');
+  let section = document.getElementById('main-page');
+  let mailValue = document.getElementById('valueEmail');
+  modal.style.display = 'block';
+  section.style.display = 'none';
+  mailValue.innerText = emailInputValue;
 }

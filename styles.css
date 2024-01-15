@@ -1,0 +1,12 @@
+#modal {
+  display: none;
+}
+
+#main-page {
+  display: block;
+}
+
+em {
+  font-style: normal;
+  font-weight: bold;
+}
