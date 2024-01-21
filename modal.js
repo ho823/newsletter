@@ -4,14 +4,14 @@ class ModalNewsletter extends HTMLElement {
     this.innerHTML =
 		`
     <section id="success-subscribe">
-      <img />
-      <h2>Thanks for subscribing!</h2>
-      <p>
+      <img id="icon-success" src="./images/icon-success.svg" alt="success icon" />
+      <h2 id="thanks-message">Thanks for subscribing!</h2>
+      <p id="confirmation-message">
         A confirmation email has been sent to <em id='valueEmail'>email</em>.
         Please open it and click the button inside to confirm
         your subscription
       </p>
-      <button onclick="hideWindow()">Dismiss message</button>
+      <button id="btn-dismiss" onclick="hideWindow()">Dismiss message</button>
     </section>
     `;
 

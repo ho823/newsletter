@@ -1,0 +1,34 @@
+#success-subscribe {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+
+}
+
+#icon-success {
+  width: 4rem;
+  margin-top: 4rem;
+}
+
+#thanks-message {
+  font-weight: 700;
+  font-size: 2.8rem;
+  margin: 2rem 0;
+  line-height: 2.9rem;
+}
+
+#confirmation-message {
+  line-height: 1.5rem;
+}
+
+#btn-dismiss {
+  padding: 1.5rem 0;
+  font-weight: bold;
+  border-radius: 0.5em;
+  background-color: hsl(235, 18%, 26%);
+  border: solid 0.1rem hsl(235, 18%, 26%);
+  position: fixed;
+  bottom: 3rem;
+  width: 84%;
+  color: white;
+}

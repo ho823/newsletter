@@ -72,7 +72,14 @@ label {
   font-weight: bold;
   border-radius: 0.5em;
   background-color: hsl(235, 18%, 26%);
+  border: solid 0.1rem hsl(235, 18%, 26%);
+
   color: white;
   margin-top: 1rem;
+
+  &:disabled {
+    background-color: hsl(231, 7%, 60%);
+    border: solid 0.1rem hsl(231, 7%, 60%);
+  }
 }
 
