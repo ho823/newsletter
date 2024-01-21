@@ -1,3 +1,21 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: hsl(234, 29%, 20%);
+  margin: 0;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2.8rem;
+  margin: 1.5rem 0;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
 #modal {
   display: none;
 }
@@ -6,7 +24,55 @@
   display: block;
 }
 
+section {
+  padding: 1.8rem;
+}
+
 em {
   font-style: normal;
   font-weight: bold;
 }
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 1rem;
+}
+
+label {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+#form-section {
+  display: flex;
+  flex-direction: column;
+}
+
+#email {
+  padding: 1.5rem;
+  border: solid 0.1rem hsl(231, 7%, 60%);
+  border-radius: 0.5rem;
+  color: hsl(231, 7%, 60%);
+  margin-top: 1rem;
+}
+
+#newsletter-btn {
+  padding: 1.5rem 0;
+  font-weight: bold;
+  border-radius: 0.5em;
+  background-color: hsl(235, 18%, 26%);
+  color: white;
+  margin-top: 1rem;
+}
+

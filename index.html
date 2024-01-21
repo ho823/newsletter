@@ -4,28 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link href="styles.css" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <title>newsletter challenge</title>
 
 </head>
 <body>
   <div id="main-page">
     <div>
-      <img/>
+      <img src="./images/illustration-sign-up-mobile.svg" alt="illustration"/>
     </div>
     <section>
-      <h1>Stay updated</h1>
+      <h1>Stay updated!</h1>
       <h2>Join 60,000+ product managers receiving monthly updates on:</h2>
 
       <ul>
-        <li>Product discovery and building what matters</li>
-        <li>Measuring to ensure updates are a success</li>
-        <li>And much more!</li>
+        <li>
+          <img class="icon" src="./images/icon-list.svg" alt="icon before element of list"/>
+          <p>Product discovery and building what matters</p>
+        </li>
+        <li>
+          <img class="icon" src="./images/icon-list.svg" alt="icon before element of list"/>
+          <p>Measuring to ensure updates are a success</p>
+        </li>
+        <li>
+          <img class="icon" src="./images/icon-list.svg" alt="icon before element of list"/>
+          <p>And much more!</p>
+        </li>
       </ul>
 
-      <label for="email">Email address</label>
-      <input type="email" id="email" pattern=".+@example\.com" size="30" placeholder="email@company.com" required oninput="btnState()"  />
-      
-      <button id="newsletter-btn" type="button" onclick="receiveNewsletter()" disabled>Subscribe to monthly newsletter</button>
+      <div id="form-section">
+        <label for="email">Email address</label>
+        <input type="email" id="email" pattern=".+@example\.com" size="30" placeholder="email@company.com" required oninput="btnState()"  />
+        
+        <button id="newsletter-btn" type="button" onclick="receiveNewsletter()" disabled>Subscribe to monthly newsletter</button>
+      </div>
 
     </section>
   </div>
