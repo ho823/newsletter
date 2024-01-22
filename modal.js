@@ -11,7 +11,7 @@ class ModalNewsletter extends HTMLElement {
         Please open it and click the button inside to confirm
         your subscription
       </p>
-      <button id="btn-dismiss" onclick="hideWindow()">Dismiss message</button>
+      <button id="btn-dismiss" onclick="hideModal()">Dismiss message</button>
     </section>
     `;
 
@@ -22,9 +22,16 @@ if ('customElements' in window) {
 	customElements.define('modal-newsletter', ModalNewsletter);
 }
 
-hideWindow = () => {
+if (window.matchMedia("(min-width: 1024px)").matches) {
+  modal.style.display = 'none';
+}
+
+hideModal = () => {
   let modal = document.getElementById('modal');
   let section = document.getElementById('main-page');
   modal.style.display = 'none';
   section.style.display = 'block';
+  if (window.matchMedia("(min-width: 1024px)").matches) {
+    section.style.display = 'flex';
+  }
 }

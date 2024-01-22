@@ -1,3 +1,6 @@
+if (window.matchMedia("(min-width: 1024px)").matches) {
+  modal.style.display = 'none';
+}
 btnState = () => {
   let emailInput = document.getElementById('email').value;
   let btn = document.getElementById('newsletter-btn');
@@ -16,4 +19,7 @@ receiveNewsletter = () => {
   modal.style.display = 'block';
   section.style.display = 'none';
   mailValue.innerText = emailInputValue;
+  if (window.matchMedia("(min-width: 1024px)").matches) {
+    modal.style.display = 'flex';
+  }
 }

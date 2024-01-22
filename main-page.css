@@ -28,6 +28,14 @@ section {
   padding: 1.8rem;
 }
 
+#illu-mobile {
+  display: block;
+}
+
+#illu-desktop {
+  display: none;
+}
+
 em {
   font-style: normal;
   font-weight: bold;
@@ -71,15 +79,51 @@ label {
   padding: 1.5rem 0;
   font-weight: bold;
   border-radius: 0.5em;
-  background-color: hsl(235, 18%, 26%);
-  border: solid 0.1rem hsl(235, 18%, 26%);
-
+  background: linear-gradient(90deg, rgba(255,82,123,1) 0%, rgba(255,89,104,1) 31%, rgba(255,99,76,1) 62%, rgba(255,106,58,1) 100%);
+  border: solid 0.1rem transparent;
   color: white;
   margin-top: 1rem;
+  box-shadow: 2px 4px 21px 2px rgba(255,89,104,0.46);
+  cursor: pointer;
 
   &:disabled {
-    background-color: hsl(231, 7%, 60%);
-    border: solid 0.1rem hsl(231, 7%, 60%);
+    background: none;
+    background-color: hsl(235, 18%, 26%);
+    border: solid 0.1rem hsl(235, 18%, 26%);
+    box-shadow: none;
+    cursor: not-allowed;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  body {
+    margin: initial;
+    height: 98vh;
+  }
+
+  #main-page {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  #container-img {
+    height: 87%;
+    width: 50%;
+    margin-left: 1rem;
+  }
+
+  #illu-mobile {
+    display: none;
+  }
+  
+  #illu-desktop {
+    display: block;
+    width: 100%;
+    object-position: -1rem;
+  }
+}
+
 
